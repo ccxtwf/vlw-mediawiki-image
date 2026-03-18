@@ -45,3 +45,25 @@ services:
 ```sh
 docker compose up -d
 ```
+
+## Using the Wiki
+
+### Port
+
+The MediaWiki app is configured to be hosted on `http://localhost:8080`. If hosting this app on another host/port, remember to edit the following line on LocalSettings.php:
+```php
+# Change with another host/port
+$wgServer = "http://localhost:8080";
+```
+
+### Login Credentials
+> User: Admin
+> Password: mediawiki1234
+
+### Action API
+
+The [MediaWiki Action API](https://www.mediawiki.org/wiki/API:Action_API) is located on `http://localhost:8080/api.php`.
+
+### Special:ExpandTemplates
+
+The special page Special:ExpandTemplates (`http://localhost:8080/index.php?title=Special:ExpandTemplates`) provides a web interface to parse a given wikitext.
