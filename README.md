@@ -12,6 +12,7 @@ docker build . -t <IMAGE NAME>:<TAG>
 
 ### Required volume mounts
 > The folder `db` comprises the database of the MediaWiki application, which uses a lightweight SQLITE database flat file. This file contains the templates and modules that are needed to parse a given page. This folder should be mounted onto the directory `/var/www/data` on your container.
+
 > The file LocalSettings.php comprises the wiki's configuration (including configuration on the extensions and skins that should be loaded). This file should be mounted onto the directory `/var/www/html/LocalSettings.php` on your container.
 
 ### Optional volume mounts
