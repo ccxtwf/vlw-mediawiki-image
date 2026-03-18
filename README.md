@@ -58,6 +58,7 @@ $wgServer = "http://localhost:8080";
 
 ### Login Credentials
 > User: Admin
+
 > Password: mediawiki1234
 
 ### Action API
