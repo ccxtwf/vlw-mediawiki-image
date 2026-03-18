@@ -21,7 +21,7 @@ docker build . -t <IMAGE NAME>:<TAG>
 - This image is loaded with the most important extensions that are used on VLW. Extensions are loaded from `/var/www/html/extensions` on the container. NOTE: Mounting a volume to this directory may cause the pre-existing extensions to disappear.
 
 ### Docker command
-1. Once the image is built, you can either run the container either with `docker run`:
+1. Once the image is built, you can run the container with `docker run`:
 ```sh
 docker run -p 8080:80 -v "/path/to/db/folder:/var/www/data" -v "/path/to/LocalSettings.php:/var/www/html/LocalSettings.php" -d vlw-mediawiki
 ```
