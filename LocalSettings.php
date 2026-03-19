@@ -184,6 +184,7 @@ wfLoadExtension( 'VariablesLua' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
+$wgPFEnableStringFunctions = true;
 
 # InterwikiDispatcher settings (for multi-level interwiki links, e.g. [[fandom:vocaloid:Miku|Miku]])
 $wgIWDPrefixes = [
@@ -217,5 +218,7 @@ $wgIWDPrefixes = [
 	],
 ];
 
-$wgGroupPermissions['sysop']['interwiki'] = true;
+$wgGroupPermissions['bureaucrat']['interwiki'] = true;
+$wgGroupPermissions['*']['read'] = true;
+$wgGroupPermissions['*']['noratelimit'] = true;
 $wgShowExceptionDetails = true;
